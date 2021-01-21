@@ -3,7 +3,28 @@
 {% block inner_content %}
         <div class ="page-body">
           <p></p>
-          Hi, welcome to log-drain scanner
+          <h1>Hi, welcome to log-drain scanner</h1>
           <p></p>
+          <form method="post">
+            {% csrf_token %}
+            {{ form }}
+            {% if is_running.is_running == True %}
+            <h2>Scanner is running...</h2>
+              <input type="submit" class="button" value="Submit"disabled>
+              {% else %}
+              <input type="submit" class="button" value="Submit">
+            {% endif %}
+          </form>
+
+          <p>
+
+            {% if applications %}
+
+            <h3>The following applications don't have a log-drain mapped:</h3>
+              {% for app in applications %}
+  						<p>{{ app.app_name }}</p>
+  	           {% endfor %}
+              {% endif %}
+          </p>
 
 {% endblock %}
