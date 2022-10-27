@@ -14,6 +14,8 @@ asgiref==3.5.0
     # via django
 async-timeout==4.0.2
     # via aiohttp
+asynctest==0.13.0
+    # via aiohttp
 attrs==21.4.0
     # via aiohttp
 certifi==2021.10.8
@@ -61,7 +63,7 @@ oauthlib==3.2.1
     #   requests-oauthlib
 polling2==0.5.0
     # via cloudfoundry-client
-protobuf==3.19.4
+protobuf==3.19.5
     # via
     #   -r requirements.in
     #   cloudfoundry-client
@@ -89,6 +91,12 @@ six==1.16.0
     # via websocket-client
 sqlparse==0.4.2
     # via django
+typing-extensions==4.4.0
+    # via
+    #   aiohttp
+    #   asgiref
+    #   async-timeout
+    #   yarl
 urllib3==1.26.12
     # via
     #   -r requirements.in
