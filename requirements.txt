@@ -87,7 +87,7 @@ sentry-sdk==1.17.0
     # via -r requirements.in
 sqlparse==0.4.3
     # via django
-urllib3==1.26.15
+urllib3==1.26.18
     # via
     #   -r requirements.in
     #   requests
