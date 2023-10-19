@@ -2,5 +2,5 @@
 applications:
   - name: paas-logdrain-scanner
     buildpacks:
-      - python_buildpack_1.7.35
+      - python_buildpack 1.7.35
     stack: cflinuxfs4
