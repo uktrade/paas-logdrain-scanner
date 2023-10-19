@@ -15,10 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from django.conf.urls import include, url
+from django.conf.urls import include, re_path
 
 urlpatterns = [
     path('auth/', include('authbroker_client.urls', namespace='authbroker')),
     path('admin/', admin.site.urls),
-    url(r'^', include('scanner.urls')),
+    re_path(r'^', include('scanner.urls')),
 ]
