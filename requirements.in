@@ -16,5 +16,5 @@ urllib3>=1.26.5
 protobuf>=3.19.5
 
 #Dependabot Alert
-certifi==2022.12.7
+certifi==2023.7.22
 oauthlib>=3.2.2
